@@ -1,0 +1,10 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: 01-sendslack
+spec:
+  job_template_inventory: localhost
+  job_template_name: 01-sendslack
+  job_template_playbook: send-slack.yaml
+  job_template_project: ansible-simple
+  tower_auth_secret: tower

@@ -1,0 +1,7 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: get-network-facts
+spec:
+  job_template_name: 00-networkfacts
+  tower_auth_secret: tower

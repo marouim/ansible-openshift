@@ -1,0 +1,9 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: send-message-openshift
+spec:
+  job_template_name: 01-sendslack
+  tower_auth_secret: tower
+  extra_vars:
+    message: Message de Openshift

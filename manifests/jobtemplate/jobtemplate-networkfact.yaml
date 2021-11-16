@@ -1,0 +1,10 @@
+apiVersion: tower.ansible.com/v1alpha1
+kind: JobTemplate
+metadata:
+  name: 00-networkfacts
+spec:
+  job_template_inventory: vnf
+  job_template_name: 00-networkfacts
+  job_template_playbook: network-facts.yaml
+  job_template_project: ansible-simple
+  tower_auth_secret: tower
